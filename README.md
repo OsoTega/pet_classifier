@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Here's a README template for your Next.js frontend code:
 
-## Getting Started
+---
 
-First, run the development server:
+# Pet Classification Frontend
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This repository contains a Next.js frontend application for classifying pet images using a backend server.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This frontend application allows users to select an image, which is then processed and classified by a backend server. The server, in turn, calls a Python backend to perform the classification.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone <repository-url>
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Open your browser and navigate to `http://localhost:3000` to access the application.
+
+## Frontend Components
+
+- **UploadComponent**: The main component responsible for selecting and processing the image. It uses Canvas API to display the selected image and sends the processed data to the backend server for classification.
+
+## Backend Servers
+
+The frontend application communicates with two backend servers:
+
+1. **Node.js Backend**: Receives image data from the frontend, processes it, and sends it to the Python backend for classification.
+
+2. **Python Backend**: Performs the image classification using a pre-trained model and returns the classification result to the Node.js backend.
+
+## Configuration
+
+Ensure that the environment variable `NEXT_PUBLIC_API_SERVER_URL` is set to the URL of the Node.js backend server.
+
+## Dependencies
+
+- `react`: JavaScript library for building user interfaces.
+- `canvas`: Node.js canvas library for creating images.
+- `@tensorflow/tfjs`: TensorFlow.js library for machine learning in JavaScript.
+- `axios`: Promise-based HTTP client for making requests to the backend server.
+
+## Directory Structure
+
+- **pages/**: Contains Next.js pages.
+- **components/**: Contains React components used in the application.
+- **public/**: Contains public assets such as images and fonts.
+
+## Author
+
+- **Author**: Tega Osowa
+- **Email**: stevetega.osowa11@gmail.com
+- **GitHub**: [OsoTega](https://github.com/OsoTega)
+
+## License
+
+This project is open source and free to use.
+
+---
+
+Feel free to customize the README further with additional information or instructions specific to your project!
