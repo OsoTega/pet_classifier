@@ -1,7 +1,3 @@
-Here's a README template for your Next.js frontend code:
-
----
-
 # Pet Classification Frontend
 
 This repository contains a Next.js frontend application for classifying pet images using a backend server.
@@ -70,7 +66,3 @@ Ensure that the environment variable `NEXT_PUBLIC_API_SERVER_URL` is set to the 
 ## License
 
 This project is open source and free to use.
-
----
-
-Feel free to customize the README further with additional information or instructions specific to your project!
