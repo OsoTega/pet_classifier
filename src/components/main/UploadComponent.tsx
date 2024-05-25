@@ -63,7 +63,10 @@ const UploadComponent = (props: Props) => {
                                 imgArray.push(data[i + 2] / 255); // B
                                 // Ignore the alpha channel (data[i + 3])
                             }
-
+                            setCategory({
+                                classification: "",
+                                probability: ""
+                            })
                             const imgArrayFloat32 = new Float32Array(imgArray);
                             setProcessing(true);
                             fetch(`${process.env.NEXT_PUBLIC_API_SERVER_URL}`, {
