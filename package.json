@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
-    "@tensorflow/tfjs": "^4.19.0",
-    "@tensorflow/tfjs-node": "^4.19.0",
     "canvas": "^2.11.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
