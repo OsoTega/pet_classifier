@@ -15,7 +15,7 @@ This frontend application allows users to select an image, which is then process
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/OsoTega/pet_classifier.git
    ```
 
 2. Install dependencies:
